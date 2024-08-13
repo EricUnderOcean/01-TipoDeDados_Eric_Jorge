@@ -7,16 +7,20 @@ using namespace std;
 int main()
 {
 	cout << "Estrutura de Dados - Fatec" << endl;
-	
+	// cout: se trata de um comando de exibição de informação na tela
+	// endl: representa troca de linha  
 	cout << "Tipos Numericos\n";
 	cout << "===============\n";
 	int i = 10;
 	short s = 18;
 	long l = 200000;
+	// valores acima = valores inteiros
 	float f = 1.97F;
 	double  d = 4.73;
+	// valores acima = valores reais
 	cout << "Inteiros\n";
 	cout << "  int i = " << i << " ocupa " << sizeof(i) << " bytes\n";
+	// sizeof: "tamanho de..."
 	cout << "short s = " << s << " ocupa " << sizeof(s) << " bytes\n";
 	cout << "long  l = " << l << " ocupa " << sizeof(l) << " bytes\n\n";
 	cout << "Ponto Flutuante (Reais)\n";
@@ -36,11 +40,13 @@ int main()
 	cout << "\nTipo string\n";
 	cout << "===========\n";
 	string texto = "Estrutura de Dados vai ser moleza!";
+	// string: cadeia de caracteres
 	cout << "string texto = \"" << texto << "\" ocupa " << sizeof(texto) << " bytes\n";
 
 	cout << "\nPonteiros\n";
 	cout << "===========\n";
 	string* ponteiro = &texto;
+	//string*: não é uma string, é o endereço desta string
 	cout << "Para a variavel 'texto' do exemplo acima: string* ponteiro = &texto\nO endereco da memoria onde o valor foi armazenado (ponteiro)  = " << ponteiro << endl;
 	cout << "O valor armazendo no local indicado pelo ponteiro e *ponteiro = \"" << *ponteiro << "\"";
 
@@ -60,6 +66,7 @@ int main()
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
+	// cin: se trata de um comando de exibição de informação da tela pro sistema
 	cout << "Digite sua idade: ";
 	cin >> idade;
 	dias = idade * 365;
